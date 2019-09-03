@@ -11,8 +11,7 @@ public class Persona {
     public String identificación;
     public String telefono;
     public String dirección;
-    public String correo_electronico; 
-
+    public String correo_electronico;
     public String getNombre() {
         return nombre;
     }
@@ -100,4 +99,8 @@ public class Persona {
    
    } 
 
+   public int calcEdad(){
+   
+   return 10;
+   }
 }
