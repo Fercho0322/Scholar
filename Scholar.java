@@ -14,13 +14,13 @@ public class Scholar {
         empleado1.apellidos = " Oliveros Ocampo";
         empleado1.fecha_nacimiento = "22-03-2001";
         empleado1.genero = " Masculino";
-        empleado1.identificaci贸n = "1001865500";
+        empleado1.identificaci髇 = "1001865500";
         empleado1.calcEdad();
         //System.out.println("El empleado se llama " + empleado1.nombre + empleado1.apellidos);
         System.out.println("Su fecha de nacimiento es " + empleado1.fecha_nacimiento);
         empleado1.printName();
         System.out.println("Su genero es" + empleado1.genero);
-        System.out.println("Su numero de identificaci贸n es " + empleado1.identificaci贸n);
+        System.out.println("Su numero de identificaci贸n es " + empleado1.identificaci髇);
         System.out.println("la edad es" + empleado1.calcEdad());
         Estudiante estudiante1 = new Estudiante();
         
@@ -28,13 +28,13 @@ public class Scholar {
         estudiante1.apellidos= " Oliveros Ocampo";
         estudiante1.fecha_nacimiento = "22-03-2001";
         estudiante1.genero = " Masculino";
-        estudiante1.identificaci贸n = "1001865500";
+        estudiante1.identificaci髇 = "1001865500";
         
         //System.out.println("El estudiante tiene por nombre " + estudiante1.nombre +estudiante1.apellidos);
         estudiante1.printName();
         System.out.println("Su fecha de nacimiento es " + estudiante1.fecha_nacimiento);
         System.out.println("Su genero es" + estudiante1.genero);
-        System.out.println("Su numero de identificaci贸n es " + estudiante1.identificaci贸n);    
+        System.out.println("Su numero de identificaci贸n es " + estudiante1.identificaci髇);    
     
     
     }

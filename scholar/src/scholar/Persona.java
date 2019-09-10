@@ -1,6 +1,14 @@
-package scholar;
 
+
+package scholar;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 public class Persona {
+
+    static Persona between(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public String nombre;
     public String apellidos;
@@ -11,13 +19,26 @@ public class Persona {
     public String identificación;
     public String telefono;
     public String dirección;
+    public String Año_actual;
     public String correo_electronico;
+    public String Years;
+    public String Months;
+    public String Days;
+    
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getAño_actual() {
+        return Año_actual;
+    }
+
+    public void setAño_actual(String Año_actual) {
+        this.Año_actual = Año_actual;
     }
 
     public String getApellidos() {
@@ -99,8 +120,41 @@ public class Persona {
    
    } 
 
+    public String getYears() {
+        return Years;
+    }
+
+    public void setYears(String Years) {
+        this.Years = Years;
+    }
+
+    public String getMonths() {
+        return Months;
+    }
+
+    public void setMonths(String Months) {
+        this.Months = Months;
+    }
+
+    public String getDays() {
+        return Days;
+    }
+
+    public void setDays(String Days) {
+        this.Days = Days;
+    }
+
    public int calcEdad(){
-   
-   return 10;
+    return 18;
    }
+    
+  
+  
+     
+    
+   
+  
+
+
+   
 }
