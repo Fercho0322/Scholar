@@ -1,14 +1,10 @@
-
-
 package scholar;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
-public class Persona {
 
-    static Persona between(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+public class Persona {
 
     public String nombre;
     public String apellidos;
@@ -19,26 +15,16 @@ public class Persona {
     public String identificación;
     public String telefono;
     public String dirección;
-    public String Año_actual;
-    public String correo_electronico;
-    public String Years;
-    public String Months;
-    public String Days;
     
+
+    public String correo_electronico;
+
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getAño_actual() {
-        return Año_actual;
-    }
-
-    public void setAño_actual(String Año_actual) {
-        this.Año_actual = Año_actual;
     }
 
     public String getApellidos() {
@@ -112,49 +98,21 @@ public class Persona {
     public void setCorreo_electronico(String correo_electronico) {
         this.correo_electronico = correo_electronico;
     }
-    
-   public void printName(){
-   
-       System.out.println(this.nombre +""+ this.apellidos);
-   
-   
-   } 
 
-    public String getYears() {
-        return Years;
+    public void printName() {
+
+        System.out.println(this.nombre + "" + this.apellidos);
+
     }
 
-    public void setYears(String Years) {
-        this.Years = Years;
+    public int calcEdad() {
+        // 01/01/2000
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate dob = LocalDate.parse(this.fecha_nacimiento, fmt);
+        LocalDate ahora = LocalDate.now();
+        Period period = Period.between(dob, ahora);
+        return period.getYears();
+
     }
 
-    public String getMonths() {
-        return Months;
-    }
-
-    public void setMonths(String Months) {
-        this.Months = Months;
-    }
-
-    public String getDays() {
-        return Days;
-    }
-
-    public void setDays(String Days) {
-        this.Days = Days;
-    }
-
-   public int calcEdad(){
-    return 18;
-   }
-    
-  
-  
-     
-    
-   
-  
-
-
-   
 }
