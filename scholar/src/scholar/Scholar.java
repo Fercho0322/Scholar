@@ -1,7 +1,6 @@
 package scholar;
 
 
-
 public class Scholar {
 
     public static void main(String[] args) {
@@ -14,7 +13,6 @@ public class Scholar {
         empleado1.fecha_nacimiento = "22-03-2001";
         empleado1.genero = " Masculino";
         empleado1.identificación = "1001865500";
-        //empleado1.calcEdad();
         //System.out.println("El empleado se llama " + empleado1.nombre + empleado1.apellidos);
         //System.out.println("Su fecha de nacimiento es " + empleado1.fecha_nacimiento);
         empleado1.printName();
@@ -36,9 +34,13 @@ public class Scholar {
         System.out.println("Su genero es" + estudiante1.genero);
         System.out.println("Su numero de identificación es " + estudiante1.identificación);
 
-        Persona instancia1 = new Persona();
+        
+        Estudiante instancia1 = new Estudiante();
         instancia1.calcEdad();
         System.out.println("su edad es: " + instancia1.calcEdad());
+       
+        
+        
     }
 
 }

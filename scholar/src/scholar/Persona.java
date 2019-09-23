@@ -15,7 +15,7 @@ public class Persona {
     public String identificación;
     public String telefono;
     public String dirección;
-    
+   
 
     public String correo_electronico;
 
@@ -106,7 +106,7 @@ public class Persona {
     }
 
     public int calcEdad() {
-        // 01/01/2000
+        //01/01/2000
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate dob = LocalDate.parse(this.fecha_nacimiento, fmt);
         LocalDate ahora = LocalDate.now();
